@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>empleados aca</title>
+    
+  
+   
+  </head>
+  <body>
+   <h1>ESTO YA ES LABURO DEL FRONT 'QUEDA PARA EL FUTURO !!!'</h1>
+    <div id ="resultado"></div>
+
+
+
+    
+    <script>
+        let url = 'http://localhost:5000/api/empleados'//LLAMADA A LA API CON FETCH DESDE LA CONSULTA A LA BASE DE DATOS :DDDDD
+        fetch(url)
+        .then(res => res.json())
+        .then(data => {
+           document.getElementById('resultado').innerHTML = JSON.stringify(data);
+
+        })
+        .catch(error => console.log(error))
+
+    </script>
+    </body>
+</html>
