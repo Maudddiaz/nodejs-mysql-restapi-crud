@@ -1,4 +1,5 @@
 instalar dependencias
-npm i express morgan cors nodemon mysql2 dotenv ejs
+npm install para instalar las dependendencias
 
 -----------------------------------------------------------------
+docker compose up --build para construir  el contendor en puerto 3000
